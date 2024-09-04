@@ -1,6 +1,6 @@
 import { Link } from './types'
 
-const NAV_LINKS: Link[] = [
+export const NAV_LINKS: Link[] = [
   {
     label: 'Home',
     href: '/',
