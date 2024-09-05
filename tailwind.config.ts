@@ -80,6 +80,8 @@ const config: Config = {
       backgroundImage: {
         'my-gradient':
           'linear-gradient(135deg, var(--bright-cyan), var(--lime-green))',
+        'hero-pattern-desktop': 'url(/bg-intro-desktop.svg)',
+        'hero-pattern-mobile': 'url(/bg-intro-mobile.svg)',
       },
       borderRadius: {
         lg: 'var(--radius)',
