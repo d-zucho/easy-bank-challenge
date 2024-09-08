@@ -31,6 +31,7 @@
     font-weight: 300;
     color: var(--dark-blue);
   }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -87,6 +88,10 @@
 }
 
 @layer utilities {
+  .heading2 {
+    @apply text-[20px] md:text-[24px] text-primary-dark_blue;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
@@ -116,13 +121,4 @@ h5,
 h6 {
   color: var(--dark-blue);
   font-weight: 300;
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }

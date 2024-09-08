@@ -37,7 +37,7 @@ const Hero = (props: Props) => {
           {/* copy */}
           <div className='flex flex-col gap-5 items-center lg:items-start md:order-1'>
             <div className='text-center lg:text-left space-y-4'>
-              <h1 className='text-4xl md:text-[46px] lg:text-[52px] text-primary-dark_blue'>
+              <h1 className='text-4xl md:text-[46px] lg:text-[56px] text-primary-dark_blue leading-[64px]'>
                 Next generation digital banking
               </h1>
               <p className='text-neutral-grayish_blue md:max-w-lg mx-auto'>
