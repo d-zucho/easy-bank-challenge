@@ -1,4 +1,4 @@
-import { Feature, Link } from './types'
+import { Article, Feature, Link } from './types'
 
 import Online from '@/assets/icons/icon-online.svg'
 
@@ -49,5 +49,40 @@ export const FEATURE_STATS: Feature[] = [
     title: 'Open API',
     description:
       'Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.',
+  },
+]
+
+export const ARTICLES: Article[] = [
+  {
+    title: 'Receive money in any currency with no fees',
+    byline: 'By Claire Robinson',
+    image: '/image-currency.jpg',
+    imageAlt: 'Currency',
+    previewText:
+      'The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …',
+  },
+  {
+    title: 'Treat yourself without worrying about money',
+    byline: 'By Wilson Hutton',
+    image: '/image-restaurant.jpg',
+    imageAlt: 'Restaurant',
+    previewText:
+      'Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …',
+  },
+  {
+    title: 'Take your Easybank card wherever you go',
+    byline: 'By Wilson Hutton',
+    image: '/image-plane.jpg',
+    imageAlt: 'Plane',
+    previewText:
+      'We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …',
+  },
+  {
+    title: 'Our invite-only Beta accounts are now live!',
+    byline: 'By Claire Robinson',
+    image: '/image-confetti.jpg',
+    imageAlt: 'Confetti',
+    previewText:
+      'After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site …',
   },
 ]

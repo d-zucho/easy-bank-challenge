@@ -16,3 +16,11 @@ export type Feature = {
   title: string
   description: string
 }
+
+export type Article = {
+  title: string
+  byline: string
+  image: string
+  imageAlt: string
+  previewText: string
+}
