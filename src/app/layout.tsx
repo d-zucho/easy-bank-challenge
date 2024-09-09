@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Public_Sans } from 'next/font/google'
+import Footer from '@/sections/Footer'
 
 const sans = Public_Sans({
   subsets: ['latin'],
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={sans.className}>{children}</body>
+      <body className={sans.className}>
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
