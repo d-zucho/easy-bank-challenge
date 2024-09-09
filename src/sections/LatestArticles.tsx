@@ -8,7 +8,7 @@ const LatestArticles = () => {
   return (
     <section className='py-20'>
       <MaxWidthWrapper>
-        <h2 className='text-4xl md:text-[40px] text-primary-dark_blue'>
+        <h2 className='text-4xl md:text-[40px] text-primary-dark_blue text-center md:text-left mb-20'>
           Latest Articles
         </h2>
         <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-8 justify-center'>

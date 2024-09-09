@@ -10,12 +10,12 @@ import { Button } from '@/components/ui/button'
 
 const Footer = () => {
   return (
-    <footer className='bg-primary-dark_blue h-[200px] py-7'>
+    <footer className='bg-primary-dark_blue min-h-[200px] py-7'>
       <MaxWidthWrapper className='h-full'>
         {/* footer content container */}
-        <div className='flex h-full justify-between'>
+        <div className='flex flex-col lg:flex-row h-full lg:justify-between gap-20 items-center'>
           {/* left content container */}
-          <div className='flex gap-10'>
+          <div className='flex gap-10 flex-col lg:flex-row'>
             {/* logo & icons container */}
             <div className='flex flex-col justify-between gap-5 items-center'>
               <MyLogo fill='white' className='' />
@@ -28,30 +28,42 @@ const Footer = () => {
               </div>
             </div>
             {/* both link column container */}
-            <div className='flex gap-5 items-center text-[15px]'>
+            <div className='flex flex-col lg:flex-row gap-5 items-center text-[15px]'>
               {/* left link column */}
-              <div className='flex flex-col justify-between h-full text-white/70'>
+              <div className='flex lg:flex-col gap-3 justify-between h-full text-white/70'>
                 {
                   // NAV_LINKS.map((navLink, index) => ())
                   NAV_LINKS.slice(0, 3).map((navLink, index) => (
-                    <p key={index}>{navLink.label}</p>
+                    <p
+                      key={index}
+                      className='hover:text-primary-lime_green transition-all hover:cursor-pointer'
+                    >
+                      {navLink.label}
+                    </p>
                   ))
                 }
               </div>
-              <div className='flex flex-col justify-between h-full text-white/70'>
+              <div className='flex lg:flex-col gap-3 justify-between h-full text-white/70'>
                 {
                   // NAV_LINKS.map((navLink, index) => ())
                   NAV_LINKS.slice(3).map((navLink, index) => (
-                    <p key={index}>{navLink.label}</p>
+                    <p
+                      key={index}
+                      className='hover:text-primary-lime_green transition-all hover:cursor-pointer'
+                    >
+                      {navLink.label}
+                    </p>
                   ))
                 }
-                <span>privacy policy</span>
+                <span className='hover:text-primary-lime_green transition-all hover:cursor-pointer'>
+                  Privacy Policy
+                </span>
               </div>
             </div>
           </div>
-          <div className='flex flex-col justify-between'>
-            <Button className='bg-my-gradient text-white text-sm rounded-full px-8 font-semibold '>
-              Request Invite
+          <div className='flex flex-col justify-between gap-4'>
+            <Button className='bg-my-gradient text-white text-sm rounded-full px-8 font-semibold hover:shadow-md hover:opacity-95 transition-all'>
+              <span>Request Invite</span>
             </Button>
             <p className='text-xs text-neutral-grayish_blue'>
               &copy; Easybank. All Rights Reserved
